@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/superdog-treadmill-5af44eb2eb97de003d8c771d.gif" type="gif/image" width=32px>
+    <link rel="stylesheet" href="../assets/css/stylemygrid.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <a href="/admin">Voltar</a>
+    <h1>Gallery - Gerenciamento de Conteúdo</h1>
+    <h3>Gallery - Adicionar</h3>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <label for="imagem">Imagem:</label>
+        <input type="file" name="imagem" id="" required><br>
+        <input type="submit" value="Gravar">
+    </form>
+    <h3>Gallery - Listar</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Preview</th>
+        </tr><!--  -->
+       <% for (var n=0; n<dados.length; n++){%>
+        <tr>
+            <td><%=dados[n].arquivo%></td>
+            <td><img src="../uploads/<%=dados[n].arquivo%>" alt="">
+            </td>
+        </tr>
+<%}%>
+    </table>
+    <marquee><img src="../assets/images/gif-club-penguin-dance.gif" alt=""></marquee>
+
+    <!--<marquee scrollamount=100><img width="10%" height="10%" src="../assets/images/2.png" alt=""></marquee> -->
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    padding: 25px;
+    background-color: rgb(233, 230, 230);
+    color: rgb(48, 48, 48);
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: rgb(39, 35, 35);
+    color: rgb(207, 206, 206);
+  }
+
+  a{
+    font-size: 20px;
+  }
+  
+  button{
+    width: 20%;
+  }
